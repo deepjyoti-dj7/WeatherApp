@@ -1,0 +1,99 @@
+body {
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+  
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container-2 {
+    width: 90%;
+    justify-items: center;
+}
+
+.container-3 {
+    display: flex;
+}
+
+.container-3 > h3 {
+    margin-left: 10px;
+}
+
+.div-1 {
+    margin: 10px;
+    flex-grow: 1;
+}
+
+.div-2 {
+    margin: 10px;
+}
+
+#city-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#city-temp {
+    animation: breathe 2s infinite;
+  }
+  
+  @keyframes breathe {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+#search-button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}  
+
+#theme-toggle {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+  
+#theme-toggle:hover {
+    background-color: #555;
+}
+  
+.dark-mode #theme-toggle {
+    background-color: #fff;
+    color: #333;
+}
+  
+.dark-mode #theme-toggle:hover {
+    background-color: #ddd;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
